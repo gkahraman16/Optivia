@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+
+
+#header-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.brand-name{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo-link{
+    display: block;
+    width: 8rem;
+    padding: 2;
+    height: auto;
+}
+
+a, p, span {
+    position: relative;
+    text-decoration: none;
+    font-size: medium;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 2rem;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.main{
+    width: 100%;
+}
+
+section{
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: center;
+}
+
+.section-home{
+  /* background: linear-gradient(134.48deg, #4C0E8A 0.35%, #510E91 0.36%, #4E0E8C 10.4%, #480E84 17.43%, #3E0D76 32.56%, rgb(26, 8, 71) 81.25%), #330C65;
+*/
+background: linear-gradient(134.48deg, #7C26D1 3.87%, #4D0A92 32.33%, #3A0D72 48.73%, #2E0D61 62.12%, #270C56 73.19%, #160540 92.18%), #330C65;
+}
+
+#first-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 0 9rem 0;
+}
+
+#row{
+    width: 100%;
+}
+
+#text-block{
+    color: #ffffff;
+    padding: 3rem 1rem;
+}
+
+.section-home
+.title{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#image-block{
+    width: 30rem;
+}
+
+.button-block{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.section-home
+.button{
+    background:  linear-gradient(180deg,#f16529,#e44d26);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#second{
+    margin-top: -12rem;
+}
+
+
+.bg-container{
+    width: 100%;
+    position: absolute;
+}
+
+footer{
+    background-color: cadetblue;
+    position: relative;
+    width: 100%;
+    flex: 1 0 auto;
+}
