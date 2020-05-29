@@ -132,6 +132,16 @@ section{
     position: absolute;
 }
 
+#bg-container img{
+   position: absolute;
+}
+
+img#way{
+    margin-left: -25%;
+    object-fit: cover;
+    width: 125%;
+}
+
 #about-container{
     display: flex;
     align-items: center;
