@@ -93,7 +93,9 @@
                 <img src="./images/bus.png" alt="" id="bus" class="scroll" data-ratex="1.2" data-ratey="0.5">
         </div>
         </section>
-        <section id="four"></section>
+        <section id="four">
+            
+        </section>
     </main>
     <footer>footer</footer>
     
@@ -101,23 +103,23 @@
     <script>
     window.addEventListener('scroll', function(e) {
 
-const target = document.querySelectorAll('.scroll');
+    const target = document.querySelectorAll('.scroll');
+    const header = document.querySelector('.header');
 
-
-var index = 0, length = target.length;
-for (index; index < length; index++) {
+    var index = 0, length = target.length;
+    for (index; index < length; index++) {
 
     if(window.pageYOffset > document.getElementById("third").getBoundingClientRect().y && window.pageYOffset < document.getElementById("third").getBoundingClientRect().bottom) {
         var posX = window.pageYOffset * target[index].dataset.ratex - document.getElementById("third").getBoundingClientRect().y; 
-        var posY = window.pageYOffset * target[index].dataset.ratey -290;
+        var posY = window.pageYOffset * target[index].dataset.ratey - 290;
        
         target[index].style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
-     
+
+     }
     }
-}
+     
 
-
-});
+    });
     </script>
 
       <!-- Optional JavaScript -->
