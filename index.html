@@ -28,7 +28,7 @@
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home </a>
                 <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Contact Us</a>
+                <a class="nav-item nav-link" href="contact.html">Contact Us</a>
               </div>
             </div>
         </nav>
@@ -38,14 +38,15 @@
         <section class="section-home">
             <div class="container" id="first-section-container">
                 <div class="row" id="row">
-                    <div class="col-sm-5" id="text-block">
+                    <div class="col-md-5" id="text-block">
                         <h1 class="title">Manage your routes</h1>
                         <p>We deliver dynamic route optimization and route management solutions.</p>
                         <div class="button-block">
-                            <a href="#" class="button">Contact Us</a>
+                            <a href="contact.html" class="button">Contact us</a>
+    
                         </div>
                     </div>
-                    <div class="col-sm-7" id="image-block">
+                    <div class="col-md-7" id="image-block">
                         <img class="f-img" src="./images/city.png" alt="">
                     </div>
                 </div>
@@ -59,29 +60,28 @@
             </div>
             <div class="container" id="about-container">
                 <div class="row" id="info-circles-section">
-                    <div class="lg-col-3 col-3 circle" id="circle-1">
+                    <div class="col-sm-6 col-md-3 circle" id="circle-1">
                          <div class="circle">
                              <img src="./images/dynamic-icon.png" alt="" class="icon">
-                             <p>Dynamic Routing <br> and
-                                Staff Assignment<br> Suggestion</p>
+                             <p>Dynamic Routing <br>and Staff Assignment <br> Suggestion</p>
                          </div>
                     </div>
-                    <div class="lg-col-3 col-3 circle" id="circle-2">
+                    <div class="col-sm-6 col-md-3 circle" id="circle-2">
                         <div class="circle">
                             <img src="./images/opt-icon.png" alt="" class="icon">
                             <p>Route Optimization <br> and Tracking</p>
                         </div>
                     </div>
-                    <div class="lg-col-3 col-3 circle" id="circle-3">
+                    <div class="col-sm-6 col-md-3 circle" id="circle-3">
                         <div class="circle">
                             <img src="./images/complaint-icon.png" alt="" class="icon">
                             <p>Complaint <br> Management</p>
                         </div>
                     </div>
-                    <div class="lg-col-3 col-3 circle" id="circle-4">
+                    <div class="col-sm-6 col-md-3 circle" id="circle-4">
                         <div class="circle">
                             <img src="./images/analysis-icon.png" alt="" class="icon">
-                            <p>Transportation Process <br> Analysis</BR></p>
+                            <p>Transportation <br> Process Analysis</BR></p>
                         </div>
                     </div>
                 </div>
@@ -90,11 +90,14 @@
         <section id="third">
             <div class="fluid-container" id="bg-container">
                 <img src="./images/way2.png" alt="" id="way-2">
-                <img src="./images/bus.png" alt="" id="bus" class="scroll" data-ratex="1.2" data-ratey="0.5">
+                <img src="./images/bus.png" alt="" id="bus" class="scroll" data-ratex="1.2" data-ratey="0.35">
         </div>
         </section>
         <section id="four">
-            
+            <h1>SERVİS FİRMASI</h1>
+        </section>
+        <section id="five">
+            <h1>KURUM</h1>
         </section>
     </main>
     <footer class="footer">
@@ -144,17 +147,18 @@
 
     if(window.pageYOffset > document.getElementById("third").getBoundingClientRect().y* 1.2 && window.pageYOffset < document.getElementById("third").getBoundingClientRect().bottom) {
         var posX = window.pageYOffset * target.dataset.ratex - document.getElementById("third").getBoundingClientRect().y*target.dataset.ratex*1.2 -20 ; 
-        var posY = window.pageYOffset * target.dataset.ratey - 400;
+        var posY = window.pageYOffset * target.dataset.ratey - 200;
        
         target.style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
         target.style.transition = 'width';
-        var change = 16 + window.pageYOffset * 0.015;
+        var change = window.pageYOffset * 0.03;
         target.style.width =  change+'%';
     }
      
 
     });
     </script>
+  
 
       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

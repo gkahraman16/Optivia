@@ -11,6 +11,10 @@ body,html{
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
     width: 100%;
     left: 0;
@@ -63,6 +67,13 @@ img{
     color: #ffffff;
 }
 
+.nav-item:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffffff38;
+    border-radius: 20px;
+}
+
 .navbar-toggler{
     color: white;
 }
@@ -83,6 +94,7 @@ section{
   /* background: linear-gradient(134.48deg, #4C0E8A 0.35%, #510E91 0.36%, #4E0E8C 10.4%, #480E84 17.43%, #3E0D76 32.56%, rgb(26, 8, 71) 81.25%), #330C65;
 */
   background: var(--grad-color-purple);
+  height: auto;
 }
 
 
@@ -129,6 +141,7 @@ section{
 
 #second{
     margin-top: -12rem;
+    height: auto;
 }
 
 
@@ -148,8 +161,12 @@ img#way{
     width: 75%;
 }
 
+#third{
+    
+}
+
 img#way-2{
-    margin-top: -1rem;
+    
     object-fit: cover;
     width: 100%;
 }
@@ -171,28 +188,29 @@ img#bus{
     
 }
 
-.col-3.circle{
+.col-md-3.circle{
     padding: 0;
 }
 
-.col-3.circle .circle{
+.col-md-3.circle .circle{
     background-color: #ffffff;
-    width: 15rem;
-    heighT: 15rem;
-    border-radius: 50%;
+    width: 12rem;
+    heighT: 12rem;
+    
     margin: auto;
     box-shadow: 0px 0px 10px 1px rgba(59, 4, 104, 0.411);
     text-align: center;
     transition: 0.3s;
 }
 
-.col-3.circle .circle:hover{
+.col-md-3.circle .circle:hover{
     background-color:  rgba(153, 105, 209, 0.534);;
 }
 
-.col-3.circle .circle p{
+.col-md-3.circle .circle p{
     font-weight: bold;
-    padding: .5rem;
+    font-size: medium;
+    
 }
 
 .icon{
@@ -203,18 +221,19 @@ img#bus{
 }
 
 #circle-1{
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 #circle-2{
+    margin-top: 2rem;
 }
 
 #circle-3{
-  margin-top: 9rem;
+  margin-top: 2rem;
 }
 
 #circle-4{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 
@@ -269,4 +288,23 @@ footer{
     color: white;
   }
   
-  
+  #four{
+      background-color: rgba(238,161,16,1);
+      height: 80vh;
+      padding: 10rem;
+  }
+
+  #five{
+      background-color: #55ACEE;
+      height: 80vh;
+      padding: 10rem;
+  }
+
+  .deneme{
+    background:  linear-gradient(180deg,#f16529,#e44d26);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 3rem;
+  }

@@ -1,0 +1,99 @@
+:root{
+    --grad-color-purple: linear-gradient(134.48deg, #7C26D1 3.87%, #4D0A92 32.33%, #3A0D72 48.73%, #2E0D61 62.12%, #270C56 73.19%, #160540 92.18%), #330C65;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(324deg, rgba(147,46,85,1) 0%, rgba(77,11,149,1) 100%);
+}
+
+
+#header-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.brand-name{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo-link{
+    display: block;
+    width: 8rem;
+    padding: 2;
+    height: auto;
+}
+
+a, p, span {
+    position: relative;
+    text-decoration: none;
+    font-size: medium;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 2rem;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-item:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffffff38;
+    border-radius: 20px;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.main{
+    width: 100%;
+}
+
+section{
+    width: 100%; 
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: center;
+}
+
+.section-home{
+  height: auto;
+}
+
+
+
+#first-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 0 7rem 0;
+    width: 100%;
+}
